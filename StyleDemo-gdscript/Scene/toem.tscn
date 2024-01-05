@@ -1,0 +1,119 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjtua62nqajxw"]
+
+[ext_resource type="Material" uid="uid://bjr178cdbu65t" path="res://Material/Ground.tres" id="1_l0uyc"]
+[ext_resource type="Environment" uid="uid://bkl3a2t3sr212" path="res://Material/toem.tres" id="2_jwfrw"]
+[ext_resource type="Texture2D" uid="uid://ckuhrf6un12jc" path="res://Asset/tree_1.png" id="2_ok53w"]
+[ext_resource type="Script" path="res://Scene/GameCamera.gd" id="4_vctnw"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_xjsce"]
+material = ExtResource("1_l0uyc")
+size = Vector2(50, 50)
+orientation = 1
+
+[node name="Toem" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Enviroment" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Enviroment"]
+mesh = SubResource("QuadMesh_xjsce")
+
+[node name="Tree" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree2" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.12077, 0, 0)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree3" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.12077, 0, 8.78016)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree4" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.89833, 0, 8.78016)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree5" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.89833, 0, -3.80734)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree6" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.89833, 0, -8.2903)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree7" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 16.3611, 0, -8.2903)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree8" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 16.3611, 0, 16.629)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree9" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -15.1778, 0, 16.629)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree10" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.68615, 0, 21.3512)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="Tree11" type="Sprite3D" parent="Enviroment" groups=["faceCamera"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.68615, 0, -17.451)
+centered = false
+offset = Vector2(-473, 0)
+texture = ExtResource("2_ok53w")
+region_enabled = true
+region_rect = Rect2(0, 8, 947, 2041)
+
+[node name="RotateCamera" type="Node3D" parent="."]
+
+[node name="GameCamera" type="Camera3D" parent="RotateCamera" node_paths=PackedStringArray("target")]
+transform = Transform3D(0.913545, 0.178302, -0.365572, 0, 0.898794, 0.438371, 0.406737, -0.400472, 0.821089, -19.5, 25, 30.9)
+environment = ExtResource("2_jwfrw")
+fov = 60.0
+script = ExtResource("4_vctnw")
+target = NodePath("..")
